@@ -1,6 +1,16 @@
-# PerturbGraph
+# Stable-Shift / PerturbGraph
 
-**PerturbGraph: Graph-based prediction of unseen gene perturbation responses from Perturb-seq data**
+[![Paper DOI](https://img.shields.io/badge/DOI-10.1145%2F3807503.3820871-blue)](https://doi.org/10.1145/3807503.3820871)
+[![ACM BCB 2026](https://img.shields.io/badge/ACM%20BCB-2026-0085CA)](https://doi.org/10.1145/3807503.3820871)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+Code for **“Stable-Shift: Predicting Transcriptional Responses of Unseen Gene Perturbations Using Graph Neural Networks with Biological Priors”** by Sajib Acharjee Dip and Liqing Zhang, published at ACM BCB 2026.
+
+**Paper:** https://doi.org/10.1145/3807503.3820871
+
+**Preprint:** https://arxiv.org/abs/2606.24940
+
+**How to cite:** see [`CITATION.cff`](CITATION.cff) or the citation below.
 
 This repository provides a unified framework for predicting transcriptional responses to **unseen gene perturbations** using graph-based representations, biological priors, and machine learning models.
 
@@ -25,7 +35,7 @@ It supports classical regressors, deep learning models, and graph neural network
   - ML: Random Forest, KNN, XGBoost, LightGBM
   - Deep: MLP, Autoencoder
   - Graph: GCN, GraphSAGE, GAT
-- Reproducible benchmark pipelines (ECCB experiments)
+- Reproducible benchmark pipelines for the ACM BCB 2026 experiments
 
 ---
 
@@ -36,7 +46,7 @@ It supports classical regressors, deep learning models, and graph neural network
 ```bash
 conda env create -f environment.yml
 conda activate perturbgraph
-````
+```
 
 ### Option 2: Pip
 
@@ -63,6 +73,12 @@ You need:
 ---
 
 ## ⚡ Quick Start
+
+Verify the command-line interface after installation:
+
+```bash
+python stable_shift_bench.py --help
+```
 
 Minimal run:
 
@@ -105,17 +121,19 @@ python stable_shift_bench.py \
 
 ## 🧪 Reproducing Paper Experiments
 
-### K562 benchmark
+### Replogle/K562 benchmark
 
 ```bash
-bash run_benchmark_k562.sh
+bash run_all_benchmark_replogle.sh
 ```
 
 ### Norman benchmark
 
 ```bash
-bash run_benchmark_norman.sh
+bash run_all_benchmark_norman.sh
 ```
+
+Before running these scripts, replace the four input paths at the top of each file with the locations of your Perturb-seq, STRING, and GO files.
 
 ---
 
@@ -282,32 +300,33 @@ lightgbm
 
 * `stable_shift_bench.py` → main script
 * `stable_shift_bench_extended.py` → for running all baselines called in run_all_benchmark_replogle.sh
-* shell scripts reproduce ECCB experiments
+* shell scripts reproduce the ACM BCB 2026 experiments
 * notebooks are optional for visualization
 
 ---
 
 ## 📜 Citation
 
-If you use this work, please cite:
+If you use this work, please cite the canonical conference paper:
 
-```
-Dip, Sajib Acharjee, and Liqing Zhang. "Predicting Unseen Gene Perturbation Response Using Graph Neural Networks with Biological Priors." bioRxiv (2026): 2026-03.
+```bibtex
+@inproceedings{dip2026stableshift,
+  author    = {Dip, Sajib Acharjee and Zhang, Liqing},
+  title     = {Stable-Shift: Predicting Transcriptional Responses of Unseen Gene Perturbations Using Graph Neural Networks with Biological Priors},
+  booktitle = {Proceedings of the 17th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics},
+  year      = {2026},
+  articleno = {101},
+  numpages  = {6},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/3807503.3820871},
+  url       = {https://doi.org/10.1145/3807503.3820871}
+}
 ```
 
 ---
 
-## 🧹 .gitignore
+Large datasets, generated results, logs, and model artifacts are excluded through [`.gitignore`](.gitignore).
 
-```gitignore
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
-data/
-results/
-logs/
-*.npy
-*.npz
-*.h5ad
-```
+## License
 
+The code is released under the [MIT License](LICENSE). The paper is published separately under CC BY 4.0.

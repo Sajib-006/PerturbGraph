@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Downloaded biological data and large intermediates.
+data/
+*.h5ad
+*.h5
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+
+# Generated experiment artifacts.
+results/
+logs/
+eccb/
+outputs*/

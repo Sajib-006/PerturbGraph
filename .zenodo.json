@@ -1,0 +1,37 @@
+{
+  "title": "PerturbGraph: Stable-Shift Prediction of Unseen Gene Perturbation Responses",
+  "description": "Code for the ACM BCB 2026 paper Stable-Shift: Predicting Transcriptional Responses of Unseen Gene Perturbations Using Graph Neural Networks with Biological Priors.",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Dip, Sajib Acharjee",
+      "orcid": "0009-0007-0959-2638",
+      "affiliation": "Virginia Tech"
+    },
+    {
+      "name": "Zhang, Liqing",
+      "orcid": "0000-0003-4660-9199",
+      "affiliation": "Virginia Tech"
+    }
+  ],
+  "keywords": [
+    "Perturb-seq",
+    "gene perturbation",
+    "graph neural networks",
+    "biological priors",
+    "unseen perturbations"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://doi.org/10.1145/3807503.3820871",
+      "relation": "issupplementto",
+      "resource_type": "publication-conferencepaper"
+    },
+    {
+      "identifier": "https://arxiv.org/abs/2606.24940",
+      "relation": "isversionof",
+      "resource_type": "publication-preprint"
+    }
+  ]
+}

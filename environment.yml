@@ -1,0 +1,10 @@
+name: perturbgraph
+channels:
+  - conda-forge
+  - pytorch
+  - pyg
+dependencies:
+  - python=3.11
+  - pip=24.2
+  - pip:
+      - -r requirements.txt
