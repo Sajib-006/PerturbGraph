@@ -1,0 +1,41 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "PerturbGraph",
+  "alternateName": "Stable-Shift",
+  "description": "A reproducible framework for predicting transcriptional responses to unseen gene perturbations with graph neural networks and biological priors.",
+  "version": "1.0.1",
+  "dateModified": "2026-09-13",
+  "codeRepository": "https://github.com/Sajib-006/PerturbGraph",
+  "issueTracker": "https://github.com/Sajib-006/PerturbGraph/issues",
+  "license": "https://spdx.org/licenses/MIT",
+  "programmingLanguage": "Python",
+  "applicationCategory": "Computational biology",
+  "keywords": [
+    "gene perturbation",
+    "transcriptomics",
+    "graph neural networks",
+    "Perturb-seq",
+    "biological priors"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Sajib Acharjee",
+      "familyName": "Dip",
+      "@id": "https://orcid.org/0009-0007-0959-2638"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Liqing",
+      "familyName": "Zhang",
+      "@id": "https://orcid.org/0000-0003-4660-9199"
+    }
+  ],
+  "citation": "https://doi.org/10.1145/3807503.3820871",
+  "relatedLink": [
+    "https://arxiv.org/abs/2606.24940",
+    "https://sajib-006.github.io/publication/stable-shift/",
+    "https://github.com/Sajib-006/PerturbGraph/releases/latest"
+  ]
+}

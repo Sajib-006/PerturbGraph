@@ -2,6 +2,7 @@
 
 [![Paper DOI](https://img.shields.io/badge/DOI-10.1145%2F3807503.3820871-blue)](https://doi.org/10.1145/3807503.3820871)
 [![ACM BCB 2026](https://img.shields.io/badge/ACM%20BCB-2026-0085CA)](https://doi.org/10.1145/3807503.3820871)
+[![Latest release](https://img.shields.io/github/v/release/Sajib-006/PerturbGraph)](https://github.com/Sajib-006/PerturbGraph/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Code for **“Stable-Shift: Predicting Transcriptional Responses of Unseen Gene Perturbations Using Graph Neural Networks with Biological Priors”** by Sajib Acharjee Dip and Liqing Zhang, published at ACM BCB 2026.
@@ -9,6 +10,10 @@ Code for **“Stable-Shift: Predicting Transcriptional Responses of Unseen Gene 
 **Paper:** https://doi.org/10.1145/3807503.3820871
 
 **Preprint:** https://arxiv.org/abs/2606.24940
+
+**Project page:** https://sajib-006.github.io/publication/stable-shift/
+
+**Latest release:** https://github.com/Sajib-006/PerturbGraph/releases/latest
 
 **How to cite:** see [`CITATION.cff`](CITATION.cff) or the citation below.
 
